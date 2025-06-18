@@ -238,10 +238,16 @@ Hint: Be sure to declare and initialize the total variable before the iterations
 
 Complete Exercise 15 in the space below:
 */
-let total=null
-for(let i=0;i<numArrays.length;i++){
-    for(let k=0;k<numArrays[i].length;k++){
-         total=total+numArrays[i][k]
-    }
+let total=0
+numArrays.forEach(sum)
+
+function sum(number){
+    total+=number
 }
+//idk if this way works, i did it with nested for loops too
+// for(let i=0;i<numArrays.length;i++){
+//     for(let k=0;k<numArrays[i].length;k++){
+//          total=total+numArrays[i][k]
+//     }
+// }
 console.log('Exercise 15 result:\n', total);
